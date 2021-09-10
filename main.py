@@ -38,12 +38,14 @@ def get_summary_of_video(url):
     for sentence in summarizer(parser.document, SENTENCES_COUNT):
         summary_output = summary_output+"* " +" ".join(sentence.words)+ "\n\n"
     print(summary_output)
+    if not summary_output:
+        print('have no summary')
     return summary_output
 
 
 if __name__ == "__main__":
-    url = 'https://www.youtube.com/watch?v=-7or4r8GLQY'
-    print(get_summary_of_video(url))
+    url = 'https://www.youtube.com/watch?v=FgGtXwBY8yk'
+    get_summary_of_video(url)
 
 
 
