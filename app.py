@@ -60,24 +60,20 @@ app.layout = html.Div(
 
 
 @app.callback(
-	Output('summary-display', 'children'),
-	Input('input1', 'value')
-	)
+ 	Output('summary-display', 'children'),
+ 	Input('input1', 'value')
+ 	)
 def update_summary(url):
- 	# print(url)
     if not url:
         return "Please enter URL of any YouTube video"
     print(url)
     try:
-    	summ = get_summary_of_video(url.strip())
-        # print(summ)
+        summ = get_summary_of_video(url.strip())
+        print(summ)
     except:
         summ = "Subtitles are disabled for this video"
     
     return summ
-
-
-
 
 if __name__ == "__main__":
 	app.run_server(debug=False)
