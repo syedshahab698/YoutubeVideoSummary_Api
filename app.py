@@ -11,6 +11,8 @@ app = dash.Dash(__name__,
 	external_stylesheets=[dbc.themes.SKETCHY]
 	)
 
+server = app.server
+
 app.layout = html.Div(
 	children = [
         
