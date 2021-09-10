@@ -21,7 +21,8 @@ from  youtube_transcript_api import YouTubeTranscriptApi
 def get_summary_of_video(url):
     LANGUAGE = "english"
     SENTENCES_COUNT = 10
-    url_id = url[url.find('?v=')+3:]
+    #works for both mobile and pc links
+    url_id = url.replace('watch?v=','').split('/')[-1]
     srt = YouTubeTranscriptApi.get_transcript(url_id)
     subtitle_string = " ".join([i['text'] for i in srt])
     
