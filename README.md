@@ -9,9 +9,12 @@ The app the Live at https://youtube-video-summary.herokuapp.com/
 ## Usage
 ![image](https://user-images.githubusercontent.com/55235435/132866771-29b3fc39-0798-4d53-80f0-ec6afc35c0d2.png)
 
-Add URL of the youtube video and you will see the summary of the video
+Add URL of the youtube video and you will see the summary of the video.
+
 for example: using this URL  https://www.youtube.com/watch?v=-7or4r8GLQY
-you will get a short summary of extire video
+
+you will get a short summary of extire video.
+
 ![image](https://user-images.githubusercontent.com/55235435/132866713-3a171092-54de-4967-bb3f-e00202456dc7.png)
 
 
