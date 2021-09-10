@@ -21,6 +21,7 @@ joblib==1.0.1
 lxml==4.6.3
 MarkupSafe==2.0.1
 nltk==3.6.2
+numpy==1.21.2
 plotly==5.3.1
 pycountry==20.7.3
 regex==2021.8.28
