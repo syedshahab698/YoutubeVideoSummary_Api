@@ -45,7 +45,7 @@ app.layout = html.Div(
             style={"width": "18rem"},
         ),
 
-            ], width=4),
+            ], width={"size": 4, "offset": 1},),
 
         
 
