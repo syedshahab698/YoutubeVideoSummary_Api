@@ -18,17 +18,48 @@ app.layout = html.Div(
 	children = [
         
        dbc.Jumbotron( style = { 'background-color':'#5D5C61'},children = [
+    dbc.Row( [
+        dbc.Col([
         html.H1("Youtube Video Summary", className="display-3", ),
         html.P(
             "Used to summarize a video"
     
-),  ] ),
+            ),], 
+        width=4,
+        ),
+        dbc.Col([
+            dbc.Card(
+            [
+                dbc.CardImg(src="/static/propic.jpg", top=True),
+                dbc.CardBody(
+                    [
+                        html.H4("About me", className="card-title"),
+                        html.P(
+                            "Junior DataScientist ",
+                            className="card-text",
+                        ),
+                        dbc.Button("Github",href = "https://github.com/syedshahab698", color="primary"),
+                    ]
+                ),
+            ],
+            style={"width": "18rem"},
+        ),
+
+            ], width=4),
+
+        
+
+        ], justify="center"), 
+        
+
+
+  ] ),
 
 		dbc.Row(
 		            dbc.Col(
 		            	[html.Label('Enter URL of any youtube video : '),
-		                dcc.Input(id="input1", type="text", placeholder="Enter a Youtube video Url",value = '',
-						style = {'margin-left':'20%'}
+		                dcc.Input(id="input1", type="text", placeholder="Enter a Youtube video URL",value = '',
+						style = { 'width': '60%' , "margin-left":"10px"}
 						),],
 		                width={"size": 6, "offset": 3},
 		            ),
@@ -45,6 +76,7 @@ app.layout = html.Div(
                 ]),
 
 	html.Div(className = 'footer',children = [
+                
         html.A(children = "Created by Syed Shahab uddin \u2764\uFE0F", href = 'https://github.com/syedshahab698')
         ])
     
