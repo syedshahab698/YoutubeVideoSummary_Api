@@ -67,11 +67,10 @@ def update_summary(url):
     if not url:
         return "Please enter URL of any YouTube video"
     print(url)
-    try:
-        summ = get_summary_of_video(url.strip())
-        print(summ)
-    except:
-        summ = "Subtitles are disabled for this video"
+
+    summ = get_summary_of_video(url.strip())
+        # print(summ)
+        # summ = "Subtitles are disabled for this video"
     
     return summ
 
