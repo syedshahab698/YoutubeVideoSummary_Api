@@ -1,11 +1,21 @@
 html, body {
      background-color:#F3F3F3 ;
     text-align : center;
+      overflow-x:hidden;
 }
 
 
 
 
-
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #5D5C61;
+   color: #F3F3F3;
+   text-align: center;
+   height : 5%;
+}
 
 

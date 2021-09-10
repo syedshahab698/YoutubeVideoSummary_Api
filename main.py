@@ -36,7 +36,7 @@ def get_summary_of_video(url):
     
     summary_output  = ""
     for sentence in summarizer(parser.document, SENTENCES_COUNT):
-        summary_output = summary_output +" ".join(sentence.words)+ "    "
+        summary_output = summary_output+"* " +" ".join(sentence.words)+ "\n\n"
     
     return summary_output
 

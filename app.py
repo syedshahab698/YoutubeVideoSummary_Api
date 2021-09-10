@@ -12,6 +12,7 @@ app = dash.Dash(__name__,
 	)
 
 server = app.server
+app.title = 'Youtube Video Summary'
 
 app.layout = html.Div(
 	children = [
@@ -36,14 +37,16 @@ app.layout = html.Div(
         dbc.Row(
             [
                 dbc.Col(
-                    html.Div(id='summary-display', children='Summary of the video',
-						style = {'margin-left':'20%',
-						'margin-right':'20%'}),
+                    dcc.Markdown(id='summary-display', children='Summary of the video',
+						style = {'margin-bottom':'20%',
+                        'textAlign':'left'}),
                     width={"size": 10,  "offset": 1},
                 ),
                 ]),
 
-	
+	html.Div(className = 'footer',children = [
+        html.A(children = "Created by Syed Shahab uddin \u2764\uFE0F", href = 'https://github.com/syedshahab698')
+        ])
     
 
 
