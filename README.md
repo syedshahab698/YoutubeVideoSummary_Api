@@ -7,11 +7,12 @@ A web interface that will help summaries a Youtube video
 The app the Live at https://youtube-video-summary.herokuapp.com/
 
 ## Usage
-![image](https://user-images.githubusercontent.com/55235435/132833910-e339547c-03a6-4564-8b02-7826956ea07d.png)
+![image](https://user-images.githubusercontent.com/55235435/132866771-29b3fc39-0798-4d53-80f0-ec6afc35c0d2.png)
 
 Add URL of the youtube video and you will see the summary of the video
 for example: using this URL  https://www.youtube.com/watch?v=-7or4r8GLQY
 you will get a short summary of extire video
-![image](https://user-images.githubusercontent.com/55235435/132834081-a99476d6-5c88-47be-b2b9-f23fda1e0ce6.png)
+![image](https://user-images.githubusercontent.com/55235435/132866713-3a171092-54de-4967-bb3f-e00202456dc7.png)
+
 
 Feel free to raise any issues or any feedback. I would love that. 
